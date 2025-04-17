@@ -1,0 +1,116 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 15% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 260 15% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 260 15% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 262 85% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 15% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 15% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 262 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 260 15% 20%;
+    --input: 260 15% 20%;
+    --ring: 262 85% 75%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-singularity-dark text-foreground;
+    background-image: radial-gradient(circle at 50% 10%, rgba(155, 135, 245, 0.15) 0%, rgba(26, 31, 44, 0.2) 40%, transparent 70%);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .hero-text {
+    @apply text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight;
+    background: linear-gradient(90deg, #fff 0%, #d6bcfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .subtitle-text {
+    @apply text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto;
+  }
+  
+  .glass-card {
+    @apply bg-card-gradient rounded-2xl border border-white/10 backdrop-blur-sm;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply transform -translate-y-1 shadow-neon;
+  }
+
+  .primary-button {
+    @apply bg-button-gradient hover:bg-nexrank-violet text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-neon;
+  }
+
+  .feature-icon {
+    @apply w-12 h-12 rounded-full bg-nexrank-violet/20 flex items-center justify-center text-nexrank-violet mb-4;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  
+  .nav-link {
+    @apply text-white/80 hover:text-white transition-colors duration-200;
+  }
+  
+  .nav-link-active {
+    @apply text-white font-medium;
+  }
+
+  .animated-gradient {
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
