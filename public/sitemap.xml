@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://singularityhub.netlify.app/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/servizi</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/grafica</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/informatica</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/video-editing</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/azienda</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/impegno-sociale</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/contatti</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://singularityhub.netlify.app/lavora-con-noi</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
