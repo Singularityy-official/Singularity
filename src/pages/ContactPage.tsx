@@ -96,11 +96,7 @@ const ContactPage = () => {
             <div className="absolute inset-0 bg-gradient-radial from-nexrank-violet/5 via-transparent to-transparent opacity-70 animate-pulse-slow"></div>
           </div>
         </div>
-        <!-- TrustBox widget - Review Collector -->
-<div class="trustpilot-widget" data-locale="it-IT" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68762f0f88114dfce8764a82" data-style-height="52px" data-style-width="100%">
-  <a href="https://it.trustpilot.com/review/singularitydream.it" target="_blank" rel="noopener">Trustpilot</a>
-</div>
-<!-- End TrustBox widget -->
+        
         <div className="section-container relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="hero-text mb-6">
