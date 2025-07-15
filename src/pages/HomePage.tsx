@@ -4,13 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import FeatureCard from '@/components/FeatureCard';
 import ImmersiveBackground from '@/components/ImmersiveBackground';
-import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    Trustpilot?: any;
-  }
-}
 const HomePage = () => {
   const scrollToServices = () => {
     const servicesSection = document.getElementById('services-section');
@@ -18,12 +12,6 @@ const HomePage = () => {
       servicesSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-useEffect(() => {
-  if (window.Trustpilot) {
-    window.Trustpilot.loadFromElement(document.body, true);
-  }
-}, []);
 
   return (
     <div className="overflow-hidden">
@@ -59,23 +47,12 @@ useEffect(() => {
           </div>
         </div>
       </section>
-
-<div
-  className="trustpilot-widget"
-  data-locale="it-IT"
-  data-template-id="56278e9abfbba0bdcd568bc"
-  data-businessunit-id="68762f0f88114dfce8764a82"
-  data-style-height="52px"
-  data-style-width="100%"
-  dangerouslySetInnerHTML={{
-    __html: `
-      <a href="https://it.trustpilot.com/review/singularitydream.it" target="_blank" rel="noopener">
-        Trustpilot
-      </a>
-    `,
-  }}
-/>
-
+      
+<!-- TrustBox widget - Review Collector -->
+<div class="trustpilot-widget" data-locale="it-IT" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68762f0f88114dfce8764a82" data-style-height="52px" data-style-width="100%">
+  <a href="https://it.trustpilot.com/review/singularitydream.it" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
 
       {/* Services Section with Enhanced Animations */}
       <section id="services-section" className="py-20 relative">
