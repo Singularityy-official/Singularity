@@ -100,6 +100,10 @@ const Navbar = () => {
                 src="/lovable-uploads/355f7e8e-eadc-4c20-b8d3-a150790a2885.png" 
                 alt="Singularity Logo" 
                 className="h-10 md:h-12 w-auto transition-all duration-300 group-hover:drop-shadow-lg"
+                onError={(e) => {
+                  console.log('Logo load error in Navbar:', e);
+                  console.log('Attempted path:', '/lovable-uploads/355f7e8e-eadc-4c20-b8d3-a150790a2885.png');
+                }}
               />
               <span className="text-white font-bold text-lg md:text-xl transition-all duration-300 group-hover:text-nexrank-purple">
                 Singularity

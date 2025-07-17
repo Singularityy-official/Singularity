@@ -24,7 +24,7 @@ const AboutPage = () => {
         <div className="glass-card p-8 md:p-12 max-w-3xl mx-auto">
           <div className="space-y-6 leading-relaxed">
             <p className="dark:text-gray-300 light:text-gray-800 text-lg">
-              <strong className="dark:text-white light:text-gray-900">Mi chiamo Lorenzo e ho 18 anni.</strong>
+              <strong className="dark:text-white light:text-gray-900">Mi chiamo Lorenzo e ho 17 anni.</strong>
             </p>
             
             <p className="dark:text-gray-300 light:text-gray-800 text-lg">

@@ -51,8 +51,8 @@ const ContactPage = () => {
 
     try {
       await emailjs.send(
-        'service_bdtp346',
-        'template_054g8xt',
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -60,7 +60,7 @@ const ContactPage = () => {
           message: formData.message,
           to_email: 'info.singularityy@gmail.com'
         },
-        'yIkPy6kgvBrQUOeJy'
+        'YOUR_PUBLIC_KEY'
       );
 
       toast({
@@ -230,7 +230,6 @@ const ContactPage = () => {
                         <option value="grafica">Servizi di Grafica</option>
                         <option value="informatica">Servizi Informatici</option>
                         <option value="video">Video Editing</option>
-                        <option value="Impegno Sociale">Impegno Sociale</option>
                         <option value="altro">Altro</option>
                       </select>
                     </div>
