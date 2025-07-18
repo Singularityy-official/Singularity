@@ -125,6 +125,26 @@ updateOGMeta('og:site_name', 'Singularity Dream');
     script.id = "seo-json-ld";
     script.text = JSON.stringify(jsonLd);
     document.head.appendChild(script);
+// Aggiunge anche lo script Organization (per il logo)
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Singularity Dream",
+  "url": "https://singularitydream.it",
+  "logo": "https://singularitydream.it/lovable-uploads/355f7e8e-eadc-4c20-b8d3-a150790a2885.png"
+};
+
+// Rimuove script precedente se presente
+const existingOrgJsonLd = document.getElementById("seo-org-json-ld");
+if (existingOrgJsonLd) {
+  existingOrgJsonLd.remove();
+}
+
+const orgScript = document.createElement("script");
+orgScript.type = "application/ld+json";
+orgScript.id = "seo-org-json-ld";
+orgScript.text = JSON.stringify(orgJsonLd);
+document.head.appendChild(orgScript);
 
   }, [title, description, keywords, canonical, ogImage]);
 
