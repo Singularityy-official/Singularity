@@ -54,7 +54,9 @@ const SEOHead = ({ title, description, keywords, canonical, ogImage }: SEOHeadPr
 
     updateOGMeta('og:title', title);
     updateOGMeta('og:description', description);
-    
+    updateOGMeta('og:url', canonical || 'https://singularitydream.it/');
+    updateOGMeta('og:type', 'website');
+updateOGMeta('og:site_name', 'Singularity Dream');
     if (ogImage) {
       updateOGMeta('og:image', ogImage);
     }
@@ -72,47 +74,47 @@ const SEOHead = ({ title, description, keywords, canonical, ogImage }: SEOHeadPr
 
     updateTwitterMeta('twitter:title', title);
     updateTwitterMeta('twitter:description', description);
-    
     if (ogImage) {
       updateTwitterMeta('twitter:image', ogImage);
     }
-// Structured Data - JSON-LD Schema
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Singularity Dream",
-  "url": "https://singularitydream.it",
-  "logo": "https://singularitydream.it/logo.png",
-  "image": "https://singularitydream.it/cover.jpg",
-  "description": description,
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "IT",
-    "addressLocality": "Italia"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+39 333 1234567",
-    "contactType": "customer support",
-    "areaServed": "IT"
-  },
-  "sameAs": [
-    "https://www.trustpilot.com/review/singularitydream.it"
-  ]
-};
 
-// Rimuove script vecchio (se già presente)
-const existingJsonLd = document.getElementById("seo-json-ld");
-if (existingJsonLd) {
-  existingJsonLd.remove();
-}
+    // Structured Data - JSON-LD Schema
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Singularity Dream",
+      "url": "https://singularitydream.it",
+      "logo": "https://singularitydream.it/logo.png",
+      "image": "https://singularitydream.it/cover.jpg",
+      "description": description,
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IT",
+        "addressLocality": "Italia"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+39 333 1234567",
+        "contactType": "customer support",
+        "areaServed": "IT"
+      },
+      "sameAs": [
+        "https://www.trustpilot.com/review/singularitydream.it"
+      ]
+    };
 
-// Inserisce lo script JSON-LD
-const script = document.createElement("script");
-script.type = "application/ld+json";
-script.id = "seo-json-ld";
-script.text = JSON.stringify(jsonLd);
-document.head.appendChild(script);
+    // Rimuove script vecchio (se già presente)
+    const existingJsonLd = document.getElementById("seo-json-ld");
+    if (existingJsonLd) {
+      existingJsonLd.remove();
+    }
+
+    // Inserisce lo script JSON-LD
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "seo-json-ld";
+    script.text = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
 
   }, [title, description, keywords, canonical, ogImage]);
 
