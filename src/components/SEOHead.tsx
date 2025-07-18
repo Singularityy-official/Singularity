@@ -100,16 +100,18 @@ updateOGMeta('og:site_name', 'Singularity Dream');
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "IT",
-        "addressLocality": "Italia"
+        "addressLocality": "Como",
+        "addressRegion": "Lombardia"
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+39 333 1234567",
+        "telephone": "+39 3488664662",
         "contactType": "customer support",
         "areaServed": "IT"
       },
       "sameAs": [
-        "https://www.trustpilot.com/review/singularitydream.it"
+        "https://www.trustpilot.com/review/singularitydream.it",
+        "https://maps.app.goo.gl/VZDz6DoT2DhZ7aTq6"
       ]
     };
 

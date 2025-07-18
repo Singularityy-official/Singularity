@@ -256,6 +256,17 @@ const HomePage = () => {
                   Contattaci subito
                 </Link>
               </p>
+               <p className="text-sm text-gray-400 pt-6 text-center">
+  📍 <strong>Visita il nostro profilo Google Business</strong><br />
+  <a
+    href="https://share.google.com/LRTTkm6Rz4JGxF68I"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-nexrank-violet underline hover:text-nexrank-violet/80 transition"
+  >
+    Clicca qui per il profilo Google
+  </a>
+</p>
             </div>
           </div>
         </div>
