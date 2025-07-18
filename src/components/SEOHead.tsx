@@ -94,7 +94,7 @@ updateOGMeta('og:site_name', 'Singularity Dream');
       "@type": "LocalBusiness",
       "name": "Singularity Dream",
       "url": "https://singularitydream.it",
-      "logo": "https://singularitydream.it/logo.png",
+      "logo": "https://singularitydream.it/lovable-uploads/355f7e8e-eadc-4c20-b8d3-a150790a2885.png",
       "image": "https://singularitydream.it/cover.jpg",
       "description": description,
       "address": {
