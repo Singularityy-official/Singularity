@@ -18,6 +18,16 @@ const SEOHead = ({ title, description, keywords, canonical, ogImage }: SEOHeadPr
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     }
+// Blocca Netlify dall'essere indicizzato
+if (window.location.hostname.includes('netlify.app')) {
+  let metaRobots = document.querySelector('meta[name="robots"]');
+  if (!metaRobots) {
+    metaRobots = document.createElement('meta');
+    metaRobots.setAttribute('name', 'robots');
+    document.head.appendChild(metaRobots);
+  }
+  metaRobots.setAttribute('content', 'noindex, nofollow');
+}
 
     // Update keywords if provided
     if (keywords) {
