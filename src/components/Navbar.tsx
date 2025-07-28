@@ -125,16 +125,13 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-2">
             <ThemeToggle />
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-white p-2 rounded-lg transition-all duration-300 hover:scale-110"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(8px)'
-              }}
-              aria-label={mobileMenuOpen ? "Chiudi menu" : "Apri menu"}
-            >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  className="p-2 rounded-lg transition-all duration-300 hover:scale-110 text-black dark:text-white bg-black/10 dark:bg-white/10 backdrop-blur"
+  aria-label={mobileMenuOpen ? "Chiudi menu" : "Apri menu"}
+>
+  {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+</button>
+
           </div>
         </div>
       </div>
