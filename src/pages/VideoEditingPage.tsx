@@ -60,7 +60,7 @@ const VideoEditingPage = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground font-light max-w-3xl mx-auto mb-6 sm:mb-8 animate-slide-up px-4" style={{animationDelay: '0.3s'}}>
               <strong>Montaggio video di qualità cinematografica</strong> per YouTube, social media, eventi e progetti aziendali. 
               Trasformiamo le tue idee in contenuti coinvolgenti con <strong>editing professionale YouTube</strong> e 
-              <strong>post-produzione contenuti digitali</strong> di alta qualità.
+              <strong> post-produzione contenuti digitali</strong> di alta qualità.
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row animate-slide-up px-4" style={{animationDelay: '0.6s'}}>

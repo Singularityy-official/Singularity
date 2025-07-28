@@ -56,7 +56,7 @@ const ITPage = () => {
             <p className="subtitle-text mb-8 animate-slide-up" style={{animationDelay: '0.3s'}}>
               <strong>Consulenza, assistenza e supporto informatico</strong> per privati e aziende in tutta Italia. 
               Risolviamo i tuoi problemi tecnologici con competenza, rapidità e professionalità tramite 
-              <strong> assistenza PC online</strong> e <strong>supporto informatico per aziende</strong> completo.
+              <strong> assistenza PC online</strong> e <strong>supporto informatico per aziende </strong>  completo.
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row animate-slide-up" style={{animationDelay: '0.6s'}}>
@@ -81,7 +81,7 @@ const ITPage = () => {
               <p className="text-lg leading-relaxed mb-6">
                 I nostri <strong>servizi di assistenza informatica online</strong> coprono ogni aspetto del supporto tecnico: 
                 dalla riparazione hardware alla configurazione software, dal recupero dati alla sicurezza informatica. 
-                Operiamo con <strong>assistenza PC online</strong> in tutta Italia e <strong>supporto informatico per aziende</strong> 
+                Operiamo con <strong>assistenza PC online</strong> in tutta Italia e <strong>supporto informatico per aziende </strong> 
                 per risolvere rapidamente ogni problematica tecnologica con il nostro <strong>tecnico informatico remoto</strong>.
               </p>
               <p className="text-lg leading-relaxed">

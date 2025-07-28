@@ -268,7 +268,7 @@ const ContactPage = () => {
                   <p className="text-sm text-gray-400 pt-6 text-center">
   📍 <strong>Visita il nostro profilo Google Business</strong><br />
   <a
-    href="https://share.google.com/LRTTkm6Rz4JGxF68I"
+    href="https://share.google/z4vbNP75feo8vM9kS"
     target="_blank"
     rel="noopener noreferrer"
     className="text-nexrank-violet underline hover:text-nexrank-violet/80 transition"
