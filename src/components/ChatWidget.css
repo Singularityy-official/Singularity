@@ -1,0 +1,215 @@
+@media screen and (max-width: 600px) {
+  .chat-box {
+    width: 90%;
+    right: 5%;
+    bottom: 100px;
+    height: 80%;
+  }
+
+  .chat-toggle {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0; /* Rimuovo padding per avatar */
+  }
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 80px; /* spostato più in alto */
+  right: 30px;  /* spostato un po’ a sinistra */
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #3b0d5a, #541277);
+  color: #e0d8f7;
+  padding: 20px 24px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  box-shadow: inset 0 -2px 6px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  user-select: none;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.chat-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.chat-toggle {
+  background-color: transparent; /* trasparente per mostrare solo immagine */
+  padding: 0;                    /* nessun padding */
+  border: none;
+  cursor: pointer;
+  width: 60px;                   /* dimensione bottone */
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chat-toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.chat-box {
+  width: 320px;
+  height: 420px;
+  background: linear-gradient(180deg, #2a0951, #3b0d5a);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.15s ease forwards; /* più veloce */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.chat-body {
+  flex: 1;
+  padding: 20px 28px;
+  overflow-y: auto;
+  color: #d3caeb;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 0 0 24px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: #7c5295 transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-message {
+  margin-bottom: 12px;
+}
+
+.chat-error {
+  color: #ff6b6b;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-shadow: 0 0 6px #ff6b6b;
+}
+
+.chat-input {
+  display: flex;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #3b0d5a, #541277);
+  border-top: none;
+  border-radius: 0 0 24px 24px;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 30px;
+  margin-right: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #dcd6f7;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-input input::placeholder {
+  color: #b0a8d8;
+  font-style: italic;
+}
+
+.chat-input input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.35);
+}
+
+.chat-input {
+  display: flex;
+  padding: 8px 12px;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline-offset: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.chat-input input:focus {
+  background-color: #444;
+}
+
+.chat-input button {
+  padding: 6px 18px;
+  background: rgba(72, 16, 110, 0.85); /* viola scuro trasparente */
+  color: #f3e5f5;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 4px 10px rgba(84, 18, 119, 0.7),
+    inset 0 0 15px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+  min-width: 70px;
+}
+
+.chat-input button:hover:not(:disabled) {
+  background: rgba(84, 18, 119, 1);
+  box-shadow:
+    0 6px 18px rgba(130, 52, 192, 0.9),
+    inset 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.chat-input button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
