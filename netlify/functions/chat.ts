@@ -1,5 +1,4 @@
 import { Handler } from '@netlify/functions';
-import fetch from 'node-fetch';
 
 const handler: Handler = async (event) => {
   try {
@@ -29,7 +28,7 @@ const handler: Handler = async (event) => {
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Errore nel serverless function.' }),
+      body: JSON.stringify({ error: 'Errore nel serverless function.', details: err instanceof Error ? err.message : String(err) }),
     };
   }
 };
