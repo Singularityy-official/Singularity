@@ -125,7 +125,7 @@ const Navbar = () => {
             <Link to="/about">
               <Button className="primary-button-glow animate-pulse-glow flex items-center gap-2 hover:scale-105 transition-all duration-300">
                 <User size={16} className="transition-transform duration-300 hover:rotate-12" />
-                Chi sono?
+                Chi siamo?
               </Button>
             </Link>
           </div>
@@ -177,7 +177,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <User size={16} />
-              Chi sono?
+              Chi siamo?
             </Link>
           </div>
         </nav>

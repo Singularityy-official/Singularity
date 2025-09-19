@@ -16,7 +16,7 @@ const AboutPage = () => {
             <span 
               className="bg-gradient-to-r from-pink-400 via-purple-400 to-pink-300 bg-clip-text text-transparent"
             >
-              Chi sono?
+              Chi siamo?
             </span>
           </h1>
         </div>
@@ -58,10 +58,6 @@ const AboutPage = () => {
               costruire qualcosa che abbia davvero valore.
             </p>
             
-            <p className="dark:text-gray-300 light:text-gray-800 text-lg">
-              Se sei qui, grazie. Perché anche solo leggere queste parole significa far parte di qualcosa 
-              che va oltre il digitale. Significa credere che fare del bene, oggi, è ancora possibile.
-            </p>
              <p className="dark:text-gray-300 light:text-gray-800 text-lg">
               Oggi, però, non sono più solo: accanto a me c’è Luca Montalbetti, 19 anni.
             </p>
