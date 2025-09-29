@@ -50,8 +50,8 @@ const ContactPage = () => {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_gq3q0im',
+        'template_054g8xt',
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -59,7 +59,7 @@ const ContactPage = () => {
           message: formData.message,
           to_email: 'info.singularityy@gmail.com'
         },
-        'YOUR_PUBLIC_KEY'
+        'yIkPy6kgvBrQUOeJy'
       );
 
       toast({
