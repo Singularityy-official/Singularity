@@ -68,13 +68,13 @@ const HomePage = () => {
             </h2>
             <div className="prose prose-lg mx-auto text-muted-foreground">
               <p className="text-lg leading-relaxed mb-6">
-                <strong>Singularity Dream</strong> è il progetto professionale di <strong>Lorenzo, 18 anni</strong>, specialista in <strong>servizi digitali accessibili</strong> e di qualità, e di <strong>Luca Montalbetti, 19 anni</strong>, appassionato di grafica e montaggio video con formazione nel settore.
+                <strong>Singularity Dream</strong> è il progetto professionale di <strong>Lorenzo, 18 anni</strong>, specialista in <strong>servizi digitali accessibili di qualità e grafica</strong> e di <strong>Luca Montalbetti, 19 anni</strong>, appassionato di grafica e montaggio video con formazione nel settore.
 
-La nostra missione è rendere la tecnologia e il design digitale alla portata di tutti, combinando competenza tecnica e creatività per offrire soluzioni personalizzate di <strong>branding aziendale</strong> e <strong>supporto informatico per aziende</strong>.
+La nostra missione è rendere la tecnologia e il design alla portata di tutti, combinando competenza tecnica e creatività per offrire soluzioni personalizzate di <strong>branding aziendale</strong> e <strong>supporto informatico per aziende</strong>.
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 Operiamo in <strong>tutta Italia</strong> con prestazioni occasionali regolari, garantendo 
-                <strong>assistenza a domicilio</strong> per servizi informatici,  
+                <strong> assistenza anche a domicilio</strong> per servizi informatici,  
                 <strong> grafica personalizzata  </strong> per brand e attività, e <strong>video editing professionale</strong> per content creator e aziende. 
                 Ogni progetto è curato nei minimi dettagli per garantire risultati eccellenti in 
                 <strong> visual identity</strong> e <strong>post-produzione contenuti digitali</strong>.
